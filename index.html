@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Birthday Card for My Wife</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="container">
+    <!-- Balloons Background -->
+    <div class="balloon-container">
+      <div class="balloon" style="--i:1;"></div>
+      <div class="balloon" style="--i:2;"></div>
+      <div class="balloon" style="--i:3;"></div>
+      <div class="balloon" style="--i:4;"></div>
+      <div class="balloon" style="--i:5;"></div>
+    </div>
+
+    <!-- Welcome Page -->
+    <div id="welcome-page" class="page active">
+      <h1>💌 A Special Message for You 💌</h1>
+      <p>Click below to open your special birthday card.</p>
+      <button id="open-btn">Open Card</button>
+    </div>
+
+    <!-- Diary Pages -->
+    <div id="diary" class="hidden">
+      <div class="diary-page" id="page1">
+        <h2>Happy Birthday, My Love!</h2>
+        <p>You are my sunshine on the cloudiest days and the reason behind my happiest moments. ❤️</p>
+        <p>Your laughter fills my heart with joy, and your presence makes every moment precious.</p>
+        <p>Today, I celebrate you and the incredible person you are. I am so lucky to have you by my side.</p>
+        <button class="next-btn" data-target="page2">Next Page</button>
+      </div>
+      <div class="diary-page hidden" id="page2">
+        <h2>Forever My Anchor</h2>
+        <p>Your love gives me strength, your kindness inspires me, and your smile melts my heart. 💕</p>
+        <p>In you, I’ve found my partner, my best friend, and my soulmate. Every day with you is a blessing.</p>
+        <p>I promise to cherish you forever, to stand by your side through all of life’s ups and downs.</p>
+        <button class="next-btn" data-target="page3">Next Page</button>
+      </div>
+      <div class="diary-page hidden" id="page3">
+        <h2>Endless Love</h2>
+        <p>On your special day, I want you to know how deeply I love you. 🎉</p>
+        <p>You make life beautiful, and I am endlessly grateful for everything you do and everything you are.</p>
+        <p>Happy Birthday, my love! May your day be as amazing as you are.</p>
+        <button class="next-btn" data-target="animation">Finish</button>
+      </div>
+    </div>
+
+    <!-- Heart Animation -->
+    <div id="animation" class="hidden">
+      <div class="heart"></div>
+      <h2>I Love You So Much</h2>
+      <h3>Happy Birthday to You!</h3>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
